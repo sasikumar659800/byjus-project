@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+map area {
+  outline: none;
+  cursor: pointer
+}
+
+.download {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar .rounded-button {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+.side-menu {
+  padding: 0;
+  list-style: none; 
+}
+
+.side-menu li a {
+  display: block;
+  line-height: 3;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  outline: 0;
+  color: unset;
+  white-space: nowrap;
+}
+
+.side-menu li {
+  color: #833589;
+}
+
+.side-menu li:hover {
+  background: #613f60;
+  color: #ffffff;
+}
+
+.header-section {
+  position: fixed;
+  width: 100vw;
+  min-height: 50px;
+}
+header {
+  position: fixed;
+  top: -200px;
+  left: 0;
+  min-height: 50px;
+  width: 100%;
+  transition: top 0.3s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+.header-section header .navigation #leftArrow{
+  margin-right: 10px;
+  }
+.header-section:hover header {
+  top: 0;
+  z-index: 10;
+}
+.header-section:hover header {
+  top: 0;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-button {
+  min-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
+
+
+.rounded-button {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  vertical-align: bottom;
+  text-align: center;
+  overflow: hidden;
+  background-color: #833589;
+}
+
+.rounded-button:hover {
+    border: none;
+    opacity: 1;
+    box-shadow: 0px 0px 0px 4px  #ffffff;
+    -webkit-box-shadow: 0px 0px 0px 4px  #ffffff;
+    -moz-box-shadow: 0px 0px 0px 4px  #ffffff;
+  }
+
+
+#masterWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  transition: margin-left .5s;
+  z-index: -1;
+}
+
+#panelWrap {
+  height: 100%;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  background-color: #ffffff;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  float: left;
+}
+
+.dots {
+  display: none;
+}
+
+.hideMe {
+  opacity: 0;
+}
+
+
+/* modal-section */
+.dialog-model:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-open .model-modify {
+  overflow-y: hidden;
+}
+
+.modal .modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 100vh;
+}
+
+.dialog-model {
+  background-color: transparent;
+}
+
+.modal .modal-dialog .modal-content {
+  background-color: #000;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-body {
+  position: relative;
+  padding: 0;
+}
+
+.modal .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 1200;
+  opacity: 1;
+  padding: 10px;
+  line-height: 1;
+  font-size: 12px;
+}
+
+.modal .close:active,
+.modal .close:focus {
+  outline: 0;
+  border: none;
+}
+
+.modal .close svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+.bj-pyramid
+{
+  display: flex;
+  justify-content:center;
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  right: 3.5vw;
+  bottom: 10vh;
+}
+.bj-circle
+{
+  width: 50%;
+  height: 100%;
+  right: 7.5vw;
+  bottom: 0;
+}
+@media (min-width: 992px) {
+  .modal .modal-dialog .modal-content {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-dialog .modal-content {
+    width: 900px;
+  }
+}
+
+.tooltip {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tooltip-inner {
+  background-color: #000000;
+  color: #EEF0F8;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #000000;
+}
+@media (min-width: 1600px) {
+  .bj-instantdoubt , .bj-worksheets{
+    width: 50%;
+    height: 55%;
+    left: 6%;
+  }  
+}
+
+@media (min-width: 700px) {
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .logo {
+    width: 200px;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>BYJU'S Early Learn - Live Math</title>
+	<link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="preload" as="image" href="./assets/images/1.png">
+	<link rel="preload" as="image" href="./assets/images/2.png">
+	<link rel="preload" as="image" href="./assets/images/3.png">
+	<link async rel="preload" as="image" href="./assets/images/4.png">
+	<link async rel="preload" as="image" href="./assets/images/5.png">
+	<link async rel="preload" as="image" href="./assets/images/6.png">
+	<link async rel="preload" as="image" href="./assets/images/7.png">
+	<link async rel="preload" as="image" href="./assets/images/8.png">
+	<link async rel="preload" as="image" href="./assets/images/9.png">
+	<link async rel="preload" as="image" href="./assets/images/10.png">
+	<link async rel="preload" as="image" href="./assets/images/11.png">
+	<link async rel="preload" as="image" href="./assets/images/12.png">
+	<link async rel="preload" as="image" href="./assets/images/13.png">
+	<link async rel="preload" as="image" href="./assets/images/14.png">
+	<link async rel="preload" as="image" href="./assets/images/15.png">
+	<link async rel="preload" as="image" href="./assets/images/16.png">
+	<link async rel="preload" as="image" href="./assets/images/17.png">
+	<link async rel="preload" as="image" href="./assets/images/18.png">
+	<link async rel="preload" as="image" href="./assets/images/19.png">
+	<link async rel="preload" as="image" href="./assets/images/20.png">
+	<link async rel="preload" as="image" href="./assets/images/21.png">
+	<link async rel="preload" as="image" href="./assets/images/22.png">
+	<link async rel="preload" as="image" href="./assets/images/23.png">
+	<link async rel="preload" as="image" href="./assets/images/24.png">
+	<link async rel="preload" as="image" href="./assets/images/25.png">
+	<link async rel="preload" as="image" href="./assets/images/26.png">
+	<link async rel="preload" as="image" href="./assets/images/27.png">
+	<link async rel="preload" as="image" href="./assets/images/28.png">
+	<link async rel="preload" as="image" href="./assets/images/29.png">
+	<link async rel="preload" as="image" href="./assets/images/30.png">
+	<link async rel="preload" as="image" href="./assets/images/31.png">
+	<link async rel="preload" as="image" href="./assets/images/32.png">
+	<link async rel="preload" as="image" href="./assets/images/33.png">
+</head>
+
+<body>
+	<!-- Header Section -->
+	<div class="header-section">
+		<header>
+			<div class="rounded-button" onclick="openNav()" data-toggle="tooltip" title="Menu" data-placement="bottom">
+				<svg class="nav-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					style="isolation:isolate" viewBox="0 0 100 100" width="100pt" height="100pt">
+					<path
+						d=" M 75.1 21.35 L 75.1 21.35 C 75.1 23.475 73.129 25.2 70.7 25.2 L 19.4 25.2 C 16.971 25.2 15 23.475 15 21.35 L 15 21.35 C 15 19.225 16.971 17.5 19.4 17.5 L 70.7 17.5 C 73.129 17.5 75.1 19.225 75.1 21.35 L 75.1 21.35 Z  M 85 50 L 85 50 C 85 52.125 83.029 53.85 80.6 53.85 L 19.4 53.85 C 16.971 53.85 15 52.125 15 50 L 15 50 C 15 47.875 16.971 46.15 19.4 46.15 L 80.6 46.15 C 83.029 46.15 85 47.875 85 50 L 85 50 Z  M 64.1 78.65 L 64.1 78.65 C 64.1 80.775 62.129 82.5 59.7 82.5 L 19.4 82.5 C 16.971 82.5 15 80.775 15 78.65 L 15 78.65 C 15 76.525 16.971 74.8 19.4 74.8 L 59.7 74.8 C 62.129 74.8 64.1 76.525 64.1 78.65 Z "
+						fill-rule="evenodd" fill="#ffffff" />
+				</svg>
+			</div>
+			<div class="navigation">
+				<!-- <div id="fullscreen" class="rounded-button" onclick="openFullscreen();" data-toggle="tooltip"
+					title="Fullscreen" data-placement="bottom">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						style="isolation:isolate" viewBox="0 0 100 100" width="20px" height="20px">
+						<g opacity="0">
+							<rect x="0" y="0" width="100" height="100" transform="matrix(1,0,0,1,0,0)" fill="#111111" />
+						</g>
+						<g>
+							<path
+								d=" M 16.201 12.007 C 16.131 12.002 16.061 12 15.99 12 C 14.93 12 13.92 12.42 13.17 13.17 C 12.42 13.92 11.99 14.94 11.99 16 L 11.99 56 C 11.99 57.06 12.42 58.08 13.17 58.83 C 13.92 59.58 14.93 60 15.99 60 C 17.06 60 18.07 59.58 18.82 58.83 C 19.57 58.08 19.99 57.06 19.99 56 L 19.99 20 L 56.41 20 C 57.47 20 58.49 19.58 59.24 18.83 C 59.99 18.08 60.41 17.06 60.41 16 C 60.41 14.94 59.99 13.92 59.24 13.17 C 58.49 12.42 57.47 12 56.41 12 L 16.41 12 C 16.34 12 16.27 12.002 16.201 12.007 Z "
+								fill="#111111" />
+							<path
+								d=" M 83.799 87.993 C 83.869 87.998 83.939 88 84.01 88 C 85.07 88 86.08 87.58 86.83 86.83 C 87.58 86.08 88.01 85.06 88.01 84 L 88.01 44 C 88.01 42.94 87.58 41.92 86.83 41.17 C 86.08 40.42 85.07 40 84.01 40 C 82.94 40 81.93 40.42 81.18 41.17 C 80.43 41.92 80.01 42.94 80.01 44 L 80.01 80 L 43.59 80 C 42.53 80 41.51 80.42 40.76 81.17 C 40.01 81.92 39.59 82.94 39.59 84 C 39.59 85.06 40.01 86.08 40.76 86.83 C 41.51 87.58 42.53 88 43.59 88 L 83.59 88 C 83.66 88 83.73 87.998 83.799 87.993 Z "
+								fill="#111111" />
+						</g>
+					</svg>
+				</div> -->
+				<div id="leftArrow" class="rounded-button" data-toggle="tooltip" title="Previous"
+					data-placement="bottom">
+					<svg version="1.1" class="nav-button" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" x="0px" y="0px"
+						viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+						fill="#11111">
+						<g>
+							<g>
+								<path
+									d="M45.833,270.143c-7.797-7.798-7.797-20.487,0.018-28.302L221.145,66.114c7.8-7.82,7.785-20.484-0.035-28.285
+					   c-7.821-7.8-20.485-7.785-28.286,0.035L17.549,213.572c-23.395,23.395-23.395,61.462-0.018,84.839l175.293,175.725
+					   c3.908,3.917,9.033,5.875,14.161,5.875c5.11,0,10.222-1.947,14.125-5.841c7.82-7.801,7.836-20.465,0.035-28.285L45.833,270.143z" />
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M491.999,235.999H128.98c-11.047,0-20.001,8.954-20.001,20.001s8.954,20.001,20.001,20.001h363.018
+					   c11.047,0,20.001-8.954,20.001-20.001S503.045,235.999,491.999,235.999z" />
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div id="rightArrow" class="rounded-button" data-toggle="tooltip" title="Next" data-placement="bottom">
+					<svg version="1.1" class="nav-button" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+						style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#111111">
+						<g>
+							<g>
+								<path d="M494.469,213.589L319.176,37.864c-7.802-7.821-20.465-7.835-28.286-0.035c-7.82,7.801-7.836,20.465-0.035,28.285
+					   l175.311,175.744c7.797,7.798,7.797,20.487-0.018,28.302L290.855,445.886c-7.8,7.82-7.785,20.484,0.035,28.285
+					   c3.904,3.894,9.016,5.84,14.126,5.84c5.126,0,10.253-1.959,14.161-5.876l175.275-175.707
+					   C517.846,275.033,517.846,236.966,494.469,213.589z" />
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M383.019,235.999H20.001C8.954,235.999,0,244.954,0,256s8.954,20.001,20.001,20.001h363.018
+					   c11.047,0,20.001-8.954,20.001-20.001S394.066,235.999,383.019,235.999z" />
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<!-- Sidebar Section -->
+	<div id="Sidebar" class="sidebar">
+		<div class="rounded-button" onclick="closeNav()" data-toggle="tooltip" title="Close Menu"
+			data-placement="bottom">
+			<svg class="menu-close nav-button" xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 100 100" width="100px"
+				height="100px">
+				<path
+					d=" M 50.087 55.532 L 70.627 76.071 C 72.217 77.662 74.728 77.733 76.231 76.231 L 76.231 76.231 C 77.733 74.728 77.662 72.217 76.071 70.627 L 55.532 50.087 L 76.071 29.547 C 77.662 27.957 77.733 25.446 76.231 23.943 L 76.231 23.943 C 74.728 22.441 72.217 22.512 70.627 24.102 L 50.087 44.642 L 29.547 24.102 C 27.957 22.512 25.446 22.441 23.943 23.943 L 23.943 23.943 C 22.441 25.446 22.512 27.957 24.102 29.547 L 44.642 50.087 L 24.102 70.627 C 22.512 72.217 22.441 74.728 23.943 76.231 L 23.943 76.231 C 25.446 77.733 27.957 77.662 29.547 76.071 L 50.087 55.532 Z "
+					fill="#ffffff" />
+			</svg>
+		</div>
+          
+		<div class="logo">
+			<img src="./assets/images/byjusearlylearn_logo.png" alt="byjusearlyLearn_logo"/>
+		</div>
+	  	<ul class="side-menu">
+			<li> <a href="javascript:void(0);" data-option="0" class="sidenav-option">Home</a></li>
+			<li> <a href="javascript:void(0);" data-option="4" class="sidenav-option">Learning Activity</a></li>
+			<li> <a href="javascript:void(0);" data-option="12" class="sidenav-option">Conceptual Clarity</a></li>
+			<li> <a href="javascript:void(0);" data-option="13" class="sidenav-option">Understand Concepts</a></li>
+			<li> <a href="javascript:void(0);" data-option="17" class="sidenav-option">Early Learn</a></li>
+			<li> <a href="javascript:void(0);" data-option="32" class="sidenav-option">Refund Policy</a></li>
+		</ul>		
+	</div>
+
+	<!-- Slide Section -->
+	<div class="hideMe">
+		<div id="masterWrap">
+			<div id="panelWrap">
+				<section>
+					<img data-src="./assets/images/1.png" alt="Slide-1">
+				</section>
+				<section>
+					<img data-src="./assets/images/2.png" alt="Slide-2">
+				</section>
+				<section>
+					<img data-src="./assets/images/3.png" alt="Slide-3">
+				</section>
+				<section>
+					<img data-src="./assets/images/4.png" alt="Slide-4">
+				</section>
+				<section>
+					<img data-src="./assets/images/5.png" alt="Slide-5">
+				</section>
+				<section>
+					<img data-src="./assets/images/6.png" alt="Slide-6">
+				</section>
+				<section>
+					<img data-src="./assets/images/7.png" alt="Slide-7">
+				</section>
+				<section>
+					<img data-src="./assets/images/8.png" alt="Slide-8">
+				</section>
+				<section>
+					<img data-src="./assets/images/9.png" alt="Slide-9">
+				</section>
+				<section>
+					<img data-src="./assets/images/10.png" alt="Slide-10">
+				</section>
+				<section>
+					<img data-src="./assets/images/11.png" alt="Slide-11">
+				</section>
+				<section>
+					<img data-src="./assets/images/12.png" alt="Slide-12">
+				</section>
+				<section>
+					<img data-src="./assets/images/13.png" alt="Slide-13">
+				</section>
+				<section>
+					<img data-src="./assets/images/14.png" alt="Slide-14">
+				</section>
+				<section>
+					<img data-src="./assets/images/15.png" alt="Slide-15" usemap="#image-map-1">
+					<map name="image-map-1">
+						<area data-toggle="modal" data-target="#myModal1" coords="374,349,1544,963" shape="rect">
+					</map>
+				</section>
+				<section>
+					<img data-src="./assets/images/16.png" alt="Slide-16">
+				</section>
+				<section>
+					<img data-src="./assets/images/17.png" alt="Slide-17">
+				</section>
+				<section>
+					<img data-src="./assets/images/18.png" alt="Slide-18">
+				</section>
+				<section>
+					<img data-src="./assets/images/19.png" alt="Slide-19">
+				</section>
+				<section>
+					<img data-src="./assets/images/20.png" alt="Slide-20">
+				</section>
+				<section>
+					<img data-src="./assets/images/21.png" alt="Slide-21">
+				</section>
+				<section>
+					<img data-src="./assets/images/22.png" alt="Slide-22">
+				</section>
+				<section>
+					<img data-src="./assets/images/23.png" alt="Slide-23">
+				</section>
+				<section>
+					<img data-src="./assets/images/24.png" alt="Slide-24">
+				</section>
+				<section>
+					<img data-src="./assets/images/25.png" alt="Slide-25">
+				</section>
+				<section>
+					<img data-src="./assets/images/26.png" alt="Slide-26">
+				</section>
+				<section>
+					<img data-src="./assets/images/27.png" alt="Slide-27">
+				</section>
+				<section>
+					<img data-src="./assets/images/28.png" alt="Slide-28">
+				</section>
+				<section>
+					<img data-src="./assets/images/29.png" alt="Slide-29">
+				</section>
+				<section>
+					<img data-src="./assets/images/30.png" alt="Slide-30">
+				</section>
+				<section>
+					<img data-src="./assets/images/31.png" alt="Slide-31">
+				</section>
+				<section>
+					<img data-src="./assets/images/32.png" alt="Slide-32">
+				</section>
+				<section>
+					<img data-src="./assets/images/33.png" alt="Slide-33">
+				</section>
+			</div>
+		</div>
+		<div class="dots">
+		</div>
+	</div>
+
+	<!-- Modal Section -->
+	<div class="modal fade model-modify" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<button type="button" class="close" data-dismiss="modal"><svg viewBox="0 0 24 24">
+				<path fill="#fff"
+					d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+				</path>
+			</svg></button>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">	
+					<video controls id="video1" style="width: 100%;">
+						<source src="./assets/videos/MultiplicationManyways.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- partial -->
+	<script type="text/javascript" src='./scripts/gsap-latest-beta.min.js'></script>
+	<script type="text/javascript" src='./scripts/draggable.min.js'></script>
+	<script type="text/javascript" src='./scripts/jquery-3.5.1.min.js'></script>
+	<script type="text/javascript" src='./scripts/bootstrap.min.js'></script>
+	<script type="text/javascript" src='./scripts/image-map.js'></script>
+	<script type="text/javascript" src='./scripts/script.js'></script>
+</body>
+
+</html>
